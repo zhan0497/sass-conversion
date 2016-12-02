@@ -134,11 +134,11 @@ header{
     }
 }
 
-section.focal{
+.focal{
     width: $dw;
     margin: $ma;
 }
-section.content1, section.content2{
+.content1, .content2{
     padding: 2rem 0;
 }
 .row {
@@ -277,17 +277,28 @@ footer {
             }
         }
     }
-    section{
-        &.focal, &.content1, &.content2{
-            width: $dw/4*7;
-            margin: 0 auto;
-        }
-        &.content2{
-            h4, li{
-                font-size: 1.414rem;
-            }
+    // section{
+    //     &.focal, &.content1, &.content2{
+    //         width: $dw/4*7;
+    //         margin: 0 auto;
+    //     }
+    //     &.content2{
+    //         h4, li{
+    //             font-size: 1.414rem;
+    //         }
+    //     }
+    // }
+
+    .focal, .content1, .content2{
+        width: $dw/4*7;
+        margin: 0 auto;
+    }
+    .content2{
+        h4, li{
+            font-size: 1.414rem;
         }
     }
+
     footer{
         width: $dw/4*7;
         margin: 0 auto;
@@ -366,44 +377,82 @@ footer {
             }
         }
     }
-    section{
-        &.focal, &.content1, &.content2{
-            width: $dw/4*9;
+    // section{
+    //     &.focal, &.content1, &.content2{
+    //         width: $dw/4*9;
+    //         margin: 0 auto;
+    //     }
+    //     &.focal{
+    //         h2{
+    //             width: $dw/4*6;
+    //             margin: 0 auto;
+    //         }
+    //         p.author{
+    //             width: $dw/4*6;
+    //             margin: 0 auto;
+    //         }
+    //     }
+    //     &.content1{
+    //         h3{
+    //             font-size: 1.999rem;
+    //             font-weight: 100;
+    //             .fa-2x{
+    //                 font-size: 1.999rem;
+    //                 padding-right: 1rem;
+    //             }
+    //         }
+    //     }
+    //     &.content2{
+    //         h4{
+    //             font-size: 1.414rem;
+    //         }
+    //         li{
+    //             font-size: 1.414rem;
+    //         }
+    //         p {
+    //             font-size: 1rem;
+    //             font-weight: 400;
+    //         }
+    //     }
+    // }
+
+    .focal, .content1, .content2{
+        width: $dw/4*9;
+        margin: 0 auto;
+    }
+    .focal{
+        h2{
+            width: $dw/4*6;
             margin: 0 auto;
         }
-        &.focal{
-            h2{
-                width: $dw/4*6;
-                margin: 0 auto;
-            }
-            p.author{
-                width: $dw/4*6;
-                margin: 0 auto;
-            }
+        p.author{
+            width: $dw/4*6;
+            margin: 0 auto;
         }
-        &.content1{
-            h3{
+    }
+    .content1{
+        h3{
+            font-size: 1.999rem;
+            font-weight: 100;
+            .fa-2x{
                 font-size: 1.999rem;
-                font-weight: 100;
-                .fa-2x{
-                    font-size: 1.999rem;
-                    padding-right: 1rem;
-                }
-            }
-        }
-        &.content2{
-            h4{
-                font-size: 1.414rem;
-            }
-            li{
-                font-size: 1.414rem;
-            }
-            p {
-                font-size: 1rem;
-                font-weight: 400;
+                padding-right: 1rem;
             }
         }
     }
+    .content2{
+        h4{
+            font-size: 1.414rem;
+        }
+        li{
+            font-size: 1.414rem;
+        }
+        p {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+    }
+
     footer{
         width: $dw/4*9;
         margin: 0 auto;
@@ -482,46 +531,86 @@ footer {
             }
         }
     }
-    section{
-        &.focal, &.content1, &.content2{
-            width: $dw/4*14;
+    // section{
+    //     &.focal, &.content1, &.content2{
+    //         width: $dw/4*14;
+    //         margin: 0 auto;
+    //     }
+    //     &.focal{
+    //         h2{
+    //             font-size: 3.998rem;
+    //             width: $dw/4*6;
+    //             margin: 0 auto;
+    //         }
+    //         p.author{
+    //             width: $dw/4*6;
+    //             margin: 0 auto;
+    //         }
+    //     }
+    //     &.content1{
+    //         h3{
+    //             font-size: 2.827rem;
+    //             font-weight: 100;
+    //             .fa-2x{
+    //                 font-size: 2.827rem;
+    //                 padding-right: 1rem;
+    //                 vertical-align: middle;
+    //             }
+    //         }
+    //     }
+    //     &.content2{
+    //         h4{
+    //             font-size: 1.999rem;
+    //         }
+    //         li{
+    //             font-size: 1.999rem;
+    //         }
+    //         p {
+    //             font-size: 1.414rem;
+    //             font-weight: 400;
+    //         }
+    //     }
+    // }
+
+    .focal, .content1, .content2{
+        width: $dw/4*14;
+        margin: 0 auto;
+    }
+    .focal{
+        h2{
+            font-size: 3.998rem;
+            width: $dw/4*6;
             margin: 0 auto;
         }
-        &.focal{
-            h2{
-                font-size: 3.998rem;
-                width: $dw/4*6;
-                margin: 0 auto;
-            }
-            p.author{
-                width: $dw/4*6;
-                margin: 0 auto;
-            }
+        p.author{
+            width: $dw/4*6;
+            margin: 0 auto;
         }
-        &.content1{
-            h3{
+    }
+    .content1{
+        h3{
+            font-size: 2.827rem;
+            font-weight: 100;
+            .fa-2x{
                 font-size: 2.827rem;
-                font-weight: 100;
-                .fa-2x{
-                    font-size: 2.827rem;
-                    padding-right: 1rem;
-                    vertical-align: middle;
-                }
-            }
-        }
-        &.content2{
-            h4{
-                font-size: 1.999rem;
-            }
-            li{
-                font-size: 1.999rem;
-            }
-            p {
-                font-size: 1.414rem;
-                font-weight: 400;
+                padding-right: 1rem;
+                vertical-align: middle;
             }
         }
     }
+    .content2{
+        h4{
+            font-size: 1.999rem;
+        }
+        li{
+            font-size: 1.999rem;
+        }
+        p {
+            font-size: 1.414rem;
+            font-weight: 400;
+        }
+    }
+
     footer{
         width: $dw/4*14;
         margin: 0 auto;
@@ -532,7 +621,6 @@ footer {
                 color: $light_grey;
             }
         }
-
 
         .fa-circle{
             color: $med_blue;
