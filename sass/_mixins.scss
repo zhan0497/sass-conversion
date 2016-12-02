@@ -4,3 +4,34 @@
     background-color: $bgc;
     color: $tc;
 }
+
+//clearfix
+%clf{
+    &:after{
+        display: table;
+        clear: both;
+        content: '';
+    }
+}
+
+
+//border
+@mixin border($side, $width, $color, $type:solid){
+    border-#{$side}: $width $type $color;
+}
+
+//col
+@mixin col($float, $width, $ml, $cml){
+    float:$float;
+    width: $width;
+    margin-left: $ml;
+    &:first-child{
+        margin-left: $cml;
+    }
+}
+
+//col_min
+@mixin col_m($float, $width){
+    width:$width;
+    float:$float;
+}
