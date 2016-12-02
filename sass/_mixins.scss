@@ -1,0 +1,6 @@
+//background color and text color
+// $bgc = background_color  $tc = text_color
+@mixin bgc_tc($bgc, $tc){
+    background-color: $bgc;
+    color: $tc;
+}

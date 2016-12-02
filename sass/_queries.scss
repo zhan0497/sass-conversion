@@ -1,0 +1,85 @@
+// @media
+
+// $tablet: 701;
+// $notebook: 901;
+// $desktop: 1401;
+//
+//
+// @mixin respond-to($width) {
+//     @if $width == $tablet {
+//         @media all and (min-width:#{$width}px) and (max-width: #{($notebook - 1)}px){
+//             @content;
+//         }
+//     }
+//     @else if $width == $notebook {
+//         @media all and (min-width:#{$width}px) and (max-width: #{($desktop - 1)}px){
+//             @content;
+//         }
+//     }
+//     @else if $width == $desktop {
+//         @media all and (min-width:#{$desktop }px){
+//             @content;
+//         }
+//     }
+// }
+
+// no need
+
+// $tablet: 701px;
+// $notebook: 901px;
+// $desktop: 1401px;
+
+
+// @mixin respond-to($width) {
+//     @if $width == $tablet {
+//         @media all and (min-width:$width) and (max-width: $notebook - 1){
+//             @content;
+//         }
+//     }
+//     @else if $width == $notebook {
+//         @media all and (min-width:$width) and (max-width: $desktop - 1){
+//             @content;
+//         }
+//     }
+//     @else if $width == $desktop {
+//         @media all and (min-width:$desktop){
+//             @content;
+//         }
+//     }
+// }
+
+@mixin respond-to-2($min_width, $max_width){
+    @media all and (min-width:$min_width) and (max-width: $max_width){
+        @content;
+    }
+}
+
+@mixin respond-to-1($min_width){
+    @media all and (min-width:$min_width){
+        @content;
+    }
+}
+
+
+// $tablet: 701px;
+// $notebook: 901px;
+// $desktop: 1401px;
+//
+//
+// @mixin respond-to($width) {
+//     @if $width == $tablet {
+//         @media all and (min-width:$width){
+//             @content;
+//         }
+//     }
+//     @else if $width == $notebook {
+//         @media all and (min-width:$width){
+//             @content;
+//         }
+//     }
+//     @else if $width == $desktop {
+//         @media all and (min-width:$desktop){
+//             @content;
+//         }
+//     }
+// }
